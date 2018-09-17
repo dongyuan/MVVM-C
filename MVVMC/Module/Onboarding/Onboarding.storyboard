@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RtI-fq-D21">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding-->
+        <scene sceneID="QfC-gL-lEa">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" title="Onboarding" id="RtI-fq-D21" customClass="OnboardingViewController" customModule="MVVMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gfs-3v-TjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="fwp-sr-oqK">
+                                <rect key="frame" x="20" y="40" width="335" height="187"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dec-os-jLd">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="userName"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x3o-5S-5zC">
+                                        <rect key="frame" x="0.0" y="77" width="335" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="password"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RED-VS-ods">
+                                        <rect key="frame" x="0.0" y="154" width="335" height="33"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="authenticate"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Authenticate"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n48-JT-JFH">
+                                <rect key="frame" x="170.5" y="614" width="34" height="33"/>
+                                <accessibility key="accessibilityConfiguration" identifier="skipOnboarding"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Skip"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fwp-sr-oqK" firstAttribute="leading" secondItem="V8a-Vs-R7r" secondAttribute="leading" constant="20" id="4u2-2B-d4r"/>
+                            <constraint firstItem="n48-JT-JFH" firstAttribute="centerX" secondItem="Gfs-3v-TjZ" secondAttribute="centerX" id="9Oc-7b-D3S"/>
+                            <constraint firstItem="fwp-sr-oqK" firstAttribute="top" secondItem="V8a-Vs-R7r" secondAttribute="top" constant="20" id="McL-ls-hgx"/>
+                            <constraint firstItem="V8a-Vs-R7r" firstAttribute="bottom" secondItem="n48-JT-JFH" secondAttribute="bottom" constant="20" id="PmF-I8-1zn"/>
+                            <constraint firstItem="V8a-Vs-R7r" firstAttribute="trailing" secondItem="fwp-sr-oqK" secondAttribute="trailing" constant="20" id="XyR-bm-0kK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V8a-Vs-R7r"/>
+                    </view>
+                    <connections>
+                        <outlet property="authButton" destination="RED-VS-ods" id="hDW-lO-9ZW"/>
+                        <outlet property="passwordTextField" destination="x3o-5S-5zC" id="0Uv-6J-B5J"/>
+                        <outlet property="skipButton" destination="n48-JT-JFH" id="XUn-wu-hMc"/>
+                        <outlet property="userNameTextField" destination="dec-os-jLd" id="Umh-j6-ERJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6k-5e-z3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="183"/>
+        </scene>
+    </scenes>
+</document>
