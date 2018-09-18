@@ -32,7 +32,7 @@ final class HomeFlow: Flow {
 
     private func navigateToHomeScreen() -> NextFlowItems {
         let viewController = R.storyboard.home.homeViewController()!
-        let viewModel = HomeViewModel()
+        let viewModel = HomeViewModel(newsService: NewsService())
         viewController.bind(viewModel: viewModel)
         rootViewController.setViewControllers([viewController], animated: false)
         return NextFlowItems.one(flowItem: NextFlowItem(nextPresentable: viewController, nextStepper: viewModel))

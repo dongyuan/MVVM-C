@@ -7,16 +7,23 @@
 //
 
 import UIKit
+import RxSwift
 
 final class HomeViewController: ViewController, BindableType {
     var viewModel: HomeViewModel!
+    private let cellMinimumColumnWidth: CGFloat = 300.00
+    private let cellHeight: CGFloat = 250.00
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet private weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.collectionViewLayout = ColumnFlowLayout(minimumColumnWidth: cellMinimumColumnWidth, height: cellHeight)
+        }
     }
 
     func bindViewModel() {
-
+        viewModel.articles.drive(collectionView.rx.items(cellIdentifier: R.reuseIdentifier.homeCollectionViewCell.identifier, cellType: HomeCollectionViewCell.self)) { _, article, cell in
+            cell.set(article: article)
+        }.disposed(by: disposeBag)
     }
 }
 

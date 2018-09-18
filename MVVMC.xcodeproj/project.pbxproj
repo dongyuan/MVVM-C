@@ -29,6 +29,10 @@
 		C6CC6F8D214FD0A50091A4D7 /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F8A214FD0A50091A4D7 /* OnboardingFlow.swift */; };
 		C6CC6F90214FEAE20091A4D7 /* OnboardingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F8F214FEAE20091A4D7 /* OnboardingViewModelTest.swift */; };
 		C6CC6F93214FEE440091A4D7 /* TestUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F92214FEE440091A4D7 /* TestUtility.swift */; };
+		C6CC6F962150122B0091A4D7 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F952150122B0091A4D7 /* NewsService.swift */; };
+		C6CC6F98215013DF0091A4D7 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F97215013DF0091A4D7 /* NewsList.swift */; };
+		C6CC6F9B2150195B0091A4D7 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F9A2150195B0091A4D7 /* HomeViewCell.swift */; };
+		C6CC6FA021510E9B0091A4D7 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F9F21510E9B0091A4D7 /* ColumnFlowLayout.swift */; };
 		E85A716C3080E2FB7F92755C /* Pods_MVVMCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6DC07BDAE0631C53900A94 /* Pods_MVVMCUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +89,10 @@
 		C6CC6F8A214FD0A50091A4D7 /* OnboardingFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
 		C6CC6F8F214FEAE20091A4D7 /* OnboardingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTest.swift; sourceTree = "<group>"; };
 		C6CC6F92214FEE440091A4D7 /* TestUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtility.swift; sourceTree = "<group>"; };
+		C6CC6F952150122B0091A4D7 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		C6CC6F97215013DF0091A4D7 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
+		C6CC6F9A2150195B0091A4D7 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		C6CC6F9F21510E9B0091A4D7 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +215,7 @@
 				C6CC6F40214FBE0D0091A4D7 /* Home.storyboard */,
 				C6CC6F6D214FC30C0091A4D7 /* HomeViewController.swift */,
 				C6CC6F7E214FCC800091A4D7 /* HomeViewModel.swift */,
+				C6CC6F9A2150195B0091A4D7 /* HomeViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -235,6 +244,7 @@
 		C6CC6F74214FC8570091A4D7 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C6CC6F94215012130091A4D7 /* News */,
 				C6CC6F75214FC8660091A4D7 /* Auth */,
 			);
 			path = Service;
@@ -253,6 +263,7 @@
 			children = (
 				C6CC6F81214FCCE20091A4D7 /* ViewModel.swift */,
 				C6CC6F83214FCD3A0091A4D7 /* ViewController.swift */,
+				C6CC6F9F21510E9B0091A4D7 /* ColumnFlowLayout.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -282,6 +293,23 @@
 				C6CC6F92214FEE440091A4D7 /* TestUtility.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		C6CC6F94215012130091A4D7 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC6F992150141C0091A4D7 /* Model */,
+				C6CC6F952150122B0091A4D7 /* NewsService.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C6CC6F992150141C0091A4D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC6F97215013DF0091A4D7 /* NewsList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +475,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -460,6 +489,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -551,15 +581,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6CC6F8D214FD0A50091A4D7 /* OnboardingFlow.swift in Sources */,
+				C6CC6F9B2150195B0091A4D7 /* HomeViewCell.swift in Sources */,
 				C6CC6F3D214FBE0D0091A4D7 /* AppDelegate.swift in Sources */,
 				C6CC6F82214FCCE20091A4D7 /* ViewModel.swift in Sources */,
 				C6CC6F7D214FCC230091A4D7 /* R.generated.swift in Sources */,
+				C6CC6FA021510E9B0091A4D7 /* ColumnFlowLayout.swift in Sources */,
 				C6CC6F73214FC72E0091A4D7 /* Step.swift in Sources */,
 				C6CC6F77214FC8770091A4D7 /* AuthService.swift in Sources */,
+				C6CC6F98215013DF0091A4D7 /* NewsList.swift in Sources */,
 				C6CC6F84214FCD3A0091A4D7 /* ViewController.swift in Sources */,
 				C6CC6F71214FC6E80091A4D7 /* AppFlow.swift in Sources */,
 				C6CC6F8C214FD0A50091A4D7 /* OnboardingViewController.swift in Sources */,
 				C6CC6F7F214FCC800091A4D7 /* HomeViewModel.swift in Sources */,
+				C6CC6F962150122B0091A4D7 /* NewsService.swift in Sources */,
 				C6CC6F8B214FD0A50091A4D7 /* OnboardingViewModel.swift in Sources */,
 				C6CC6F79214FC9D00091A4D7 /* HomeFlow.swift in Sources */,
 				C6CC6F6E214FC30C0091A4D7 /* HomeViewController.swift in Sources */,

@@ -13,6 +13,8 @@ target 'MVVMC' do
   pod 'SwiftLint'
   pod 'Moya/RxSwift'
   pod 'Action'
+  pod 'Moya/RxSwift'
+  pod 'Nuke'
 
   target 'MVVMCTests' do
     inherit! :search_paths
