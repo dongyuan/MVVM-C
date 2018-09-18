@@ -15,6 +15,8 @@ final class HomeViewModel: ViewModel {
 
     init(newsService: NewsServiceType) {
         self.newsService = newsService
-        articles = newsService.getTopHeadlines().map {$0?.articles ?? []}.asDriver(onErrorJustReturn: [])
+        articles = newsService.getTopHeadlines()
+            .map {($0?.articles ?? []).filter{ $0.urlToImage != nil }}
+            .asDriver(onErrorJustReturn: [])
     }
 }
