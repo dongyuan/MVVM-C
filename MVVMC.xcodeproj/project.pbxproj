@@ -33,6 +33,9 @@
 		C6CC6F98215013DF0091A4D7 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F97215013DF0091A4D7 /* NewsList.swift */; };
 		C6CC6F9B2150195B0091A4D7 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F9A2150195B0091A4D7 /* HomeViewCell.swift */; };
 		C6CC6FA021510E9B0091A4D7 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6F9F21510E9B0091A4D7 /* ColumnFlowLayout.swift */; };
+		C6CC6FA4215120F30091A4D7 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6FA3215120F30091A4D7 /* HomeViewModelTest.swift */; };
+		C6CC6FA7215121EA0091A4D7 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6FA6215121EA0091A4D7 /* NewsService.swift */; };
+		C6CC6FAB215123B70091A4D7 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6FAA215123B70091A4D7 /* NewsList.swift */; };
 		E85A716C3080E2FB7F92755C /* Pods_MVVMCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6DC07BDAE0631C53900A94 /* Pods_MVVMCUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +96,9 @@
 		C6CC6F97215013DF0091A4D7 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
 		C6CC6F9A2150195B0091A4D7 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		C6CC6F9F21510E9B0091A4D7 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
+		C6CC6FA3215120F30091A4D7 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModelTest.swift; path = MVVMCTests/Module/Home/HomeViewModelTest.swift; sourceTree = SOURCE_ROOT; };
+		C6CC6FA6215121EA0091A4D7 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		C6CC6FAA215123B70091A4D7 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 		C6CC6F50214FBE0F0091A4D7 /* MVVMCTests */ = {
 			isa = PBXGroup;
 			children = (
+				C6CC6FA5215121D60091A4D7 /* Service */,
 				C6CC6F91214FEE2F0091A4D7 /* Utility */,
 				C6CC6F8E214FEAB10091A4D7 /* Module */,
 				C6CC6F53214FBE0F0091A4D7 /* Info.plist */,
@@ -282,6 +289,8 @@
 		C6CC6F8E214FEAB10091A4D7 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C6CC6FA1215120BA0091A4D7 /* Onboarding */,
+				C6CC6FA2215120C50091A4D7 /* Home */,
 				C6CC6F8F214FEAE20091A4D7 /* OnboardingViewModelTest.swift */,
 			);
 			path = Module;
@@ -308,6 +317,46 @@
 			isa = PBXGroup;
 			children = (
 				C6CC6F97215013DF0091A4D7 /* NewsList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6CC6FA1215120BA0091A4D7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC6FA3215120F30091A4D7 /* HomeViewModelTest.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C6CC6FA2215120C50091A4D7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC6FA9215123A10091A4D7 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C6CC6FA5215121D60091A4D7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC6FA8215122750091A4D7 /* News */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C6CC6FA8215122750091A4D7 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC6FA6215121EA0091A4D7 /* NewsService.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C6CC6FA9215123A10091A4D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC6FAA215123B70091A4D7 /* NewsList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -604,7 +653,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CC6FA4215120F30091A4D7 /* HomeViewModelTest.swift in Sources */,
+				C6CC6FAB215123B70091A4D7 /* NewsList.swift in Sources */,
 				C6CC6F93214FEE440091A4D7 /* TestUtility.swift in Sources */,
+				C6CC6FA7215121EA0091A4D7 /* NewsService.swift in Sources */,
 				C6CC6F90214FEAE20091A4D7 /* OnboardingViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

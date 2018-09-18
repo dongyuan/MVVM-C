@@ -11,9 +11,9 @@ import RxCocoa
 final class HomeViewModel: ViewModel {
     let articles: Driver<[Article]>
     
-    private let newsService: NewsService
+    private let newsService: NewsServiceType
 
-    init(newsService: NewsService) {
+    init(newsService: NewsServiceType) {
         self.newsService = newsService
         articles = newsService.getTopHeadlines().map {$0?.articles ?? []}.asDriver(onErrorJustReturn: [])
     }
