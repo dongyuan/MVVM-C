@@ -26,7 +26,7 @@ struct NewsService: NewsServiceType {
 
     func getTopHeadlines() -> Single<NewsList?> {
         return provider.rx.request(.topHeadLines)
-            .map { NewsList.from(data: $0.data) }.debug()
+            .map { NewsList.from(data: $0.data) }
     }
 }
 

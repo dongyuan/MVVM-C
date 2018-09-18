@@ -36,6 +36,7 @@
 		C6CC6FA4215120F30091A4D7 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6FA3215120F30091A4D7 /* HomeViewModelTest.swift */; };
 		C6CC6FA7215121EA0091A4D7 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6FA6215121EA0091A4D7 /* NewsService.swift */; };
 		C6CC6FAB215123B70091A4D7 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6FAA215123B70091A4D7 /* NewsList.swift */; };
+		C6CC6FAD21512D030091A4D7 /* HomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC6FAC21512D030091A4D7 /* HomeUITests.swift */; };
 		E85A716C3080E2FB7F92755C /* Pods_MVVMCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6DC07BDAE0631C53900A94 /* Pods_MVVMCUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		C6CC6FA3215120F30091A4D7 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModelTest.swift; path = MVVMCTests/Module/Home/HomeViewModelTest.swift; sourceTree = SOURCE_ROOT; };
 		C6CC6FA6215121EA0091A4D7 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		C6CC6FAA215123B70091A4D7 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
+		C6CC6FAC21512D030091A4D7 /* HomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				C6CC6F5C214FBE0F0091A4D7 /* OnboardingUITests.swift */,
+				C6CC6FAC21512D030091A4D7 /* HomeUITests.swift */,
 				C6CC6F5E214FBE0F0091A4D7 /* Info.plist */,
 			);
 			path = MVVMCUITests;
@@ -665,6 +668,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CC6FAD21512D030091A4D7 /* HomeUITests.swift in Sources */,
 				C6CC6F5D214FBE0F0091A4D7 /* OnboardingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

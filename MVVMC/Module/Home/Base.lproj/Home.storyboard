@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aHz-n5-5YV">
-                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="300"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G0o-Qf-CSk">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
@@ -51,7 +51,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" text="description" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMU-gk-0My">
-                                                            <rect key="frame" x="0.0" y="190.5" width="375" height="18"/>
+                                                            <rect key="frame" x="0.0" y="190.5" width="375" height="89.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -64,6 +64,7 @@
                                             <constraint firstItem="aHz-n5-5YV" firstAttribute="top" secondItem="Upd-di-awb" secondAttribute="top" id="Eis-3r-gez"/>
                                             <constraint firstItem="aHz-n5-5YV" firstAttribute="leading" secondItem="Upd-di-awb" secondAttribute="leading" id="bUu-iz-EdX"/>
                                             <constraint firstAttribute="trailing" secondItem="aHz-n5-5YV" secondAttribute="trailing" id="oEh-2z-MKA"/>
+                                            <constraint firstAttribute="bottom" secondItem="aHz-n5-5YV" secondAttribute="bottom" constant="20" id="xJC-om-Mle"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="GMU-gk-0My" id="6ST-VE-12s"/>

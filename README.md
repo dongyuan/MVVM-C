@@ -10,8 +10,12 @@ Before exploring this showcase project, you should familiarise yourself with the
 * [Coordinators Redux](http://khanlou.com/2015/10/coordinators-redux/)
 
 # Features:
-* Authentication - username and password based authentication (all mocked to simplify the implementation)
-* Home screen - show a list of articles
+* Authentication
+  * username and password based authentication (all mocked to simplify the implementation)
+* Home screen 
+  * show a list of articles
+  * one column on portait
+  * two columns on landscape
 * Article detail - show the article detail
 
 # Goals:
