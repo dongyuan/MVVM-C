@@ -12,11 +12,14 @@ Before exploring this showcase project, you should familiarise yourself with the
 # Features:
 * Authentication
   * username and password based authentication (all mocked to simplify the implementation)
+  * the authenticate button is only enabled after user enters valid credential
+  * user can skip the authentication and go to home screen directly
 * Home screen 
   * show a list of articles
   * one column on portait
   * two columns on landscape
-* Article detail - show the article detail
+* Article detail
+  * show the article detail
 
 # Goals:
 * Show an alternative implementation using the MVVM-C architecture
